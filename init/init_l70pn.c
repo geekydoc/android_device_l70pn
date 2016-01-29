@@ -92,10 +92,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("persist.radio.multisim.config", "");
         property_set("telephony.lteOnCdmaDevice", "0");
     } else if (strncmp(serial, "LGD295", 6) == 0) {
-        property_set("ro.product.device", "l70pds");
-        property_set("ro.product.model", "LG-D295");
-        property_set("ro.build.description", "l70pds_global_com-user 4.4.2 KOT49I.D29510d D29510d.1423726485 release-keys");
-        property_set("ro.build.fingerprint", "lge/l70pds_global_com-user/l70pds:4.4.2/KOT49I.D29510d/D29510d.1423726485:user/release-keys");
+        property_set("ro.product.device", "l70pn");
+        property_set("ro.product.model", "LG-D290N");
+        property_set("ro.build.description", "l70pn_global_com-user 4.4.2 KOT49I.D29510d D29510d.1423726485 release-keys");
+        property_set("ro.build.fingerprint", "lge/l70pn_global_com-user/l70pn:4.4.2/KOT49I.D29510d/D29510d.1423726485:user/release-keys");
                 property_set("persist.radio.multisim.config", "dsds");
         property_set("telephony.lteOnCdmaDevice", "0");
     } else {
