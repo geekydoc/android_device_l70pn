@@ -1,0 +1,12 @@
+#!/system/bin/sh
+
+model=`getprop ro.product.model`
+
+if [ "$model" = "LG-D290" ] || [ "$model" = "LG-D295" ]; then
+	mount -o remount,rw /system
+	chmod 000 /system/etc/permissions/android.hardware.nfc.xml
+	chmod 000 /system/etc/permissions/android.hardware.nfc.hce.xml
+	chmod 000 /system/lib/hw/nfc_nci.l70pn.so
+	chmod 000 /system/app/NfcNci.apk
+	mount -o remount,ro /system
+fi
