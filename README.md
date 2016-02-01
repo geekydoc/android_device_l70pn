@@ -12,7 +12,7 @@ Initialize repo:
 
     repo init -u git://github.com/CyanogenMod/android.git -b cm-12.1
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.githubusercontent.com/meganukebmp/android_local_manifest/master/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.githubusercontent.com/geekydoc/android_local_manifest/master/local_manifest.xml
     
     repo sync
 
