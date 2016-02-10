@@ -60,3 +60,10 @@ $(call inherit-product, vendor/lge/l70pn/l70pn-vendor.mk)
 
 # Inherit from msm8610-common
 $(call inherit-product, device/lge/msm8610-common/msm8610.mk)
+
+# Enable ADB during boot for debugging. (Very unsafe. Remove before public build)
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+	ro.adb.secure=0 \
+	ro.secure=0 \
+	ro.debuggable=1
