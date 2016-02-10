@@ -3,3 +3,5 @@
 #
 
 qemu.hw.mainkeys=0
+# Should be mtp only on public build. Adb only for debugging!
+persist.sys.usb.config=mtp,adb
