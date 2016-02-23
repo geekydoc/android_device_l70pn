@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
 NFCEE_ACCESS_PATH := device/lge/l70pn/prebuilt/etc/nfcee_access.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
+    ro.sf.lcd_density=240 \
+    ro.sf.hwrotation=180 \
 
 PRODUCT_COPY_FILES += \
     device/lge/l70pn/mixer_paths.xml:system/etc/mixer_paths.xml \
