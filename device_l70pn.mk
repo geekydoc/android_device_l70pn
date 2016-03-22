@@ -52,10 +52,6 @@ PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-# OTA
-PRODUCT_COPY_FILES += \
-    device/lge/l70pn/prebuilt/fixup.sh:fixup.sh
-
 $(call inherit-product, vendor/lge/l70pn/l70pn-vendor.mk)
 
 # Inherit from msm8610-common

@@ -38,7 +38,4 @@ BOARD_NFC_CHIPSET := pn547
 #TWRP
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/l70pn
-
 -include vendor/lge/l70pn/BoardConfigVendor.mk
