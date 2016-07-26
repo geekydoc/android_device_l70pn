@@ -25,6 +25,8 @@ PRODUCT_PACKAGES += Torch
 
 # NFC packages
 PRODUCT_PACKAGES += \
+	libnfc-nci \
+	libnfc_nci_jni\
     NfcNci \
     Tag \
     nfc_nci.pn54x.default \
@@ -41,6 +43,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+	frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
     device/lge/l70pn/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/lge/l70pn/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
     device/lge/l70pn/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
