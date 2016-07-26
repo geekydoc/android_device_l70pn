@@ -14,10 +14,13 @@ Initialize repo:
 
     curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.githubusercontent.com/geekydoc/android_local_manifest/master/local_manifest.xml
     
-    vendor/cm/get-prebuilts
     
-    repo sync
-
+    repo sync --force-sync
+    
+Additional step needed for NFC to compile properly:
+    
+    ./NxpNfcAndroid/install_NFC.sh PN7120
+    
 Compile:
 
     . build/envsetup.sh
