@@ -25,11 +25,14 @@ PRODUCT_PACKAGES += Torch
 
 # NFC packages
 PRODUCT_PACKAGES += \
-	libnfc-nci \
-	libnfc_nci_jni\
-    NfcNci \
-    Tag \
+	NQNfcNci \
+    libnqnfc-nci \
     nfc_nci.pn54x.default \
+    libp61-jcop-kit \
+    com.nxp.nfc.nq \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    Tag \
     com.android.nfc_extras
 
 NFCEE_ACCESS_PATH := device/lge/l70pn/prebuilt/etc/nfcee_access.xml

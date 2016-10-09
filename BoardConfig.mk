@@ -34,6 +34,7 @@ TARGET_OTA_ASSERT_DEVICE := l70pn
 
 # Nfc
 BOARD_NFC_CHIPSET := pn547
+TARGET_USES_NQ_NFC := true
 
 #TWRP
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
