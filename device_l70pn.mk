@@ -37,16 +37,12 @@ PRODUCT_PACKAGES += \
 
 NFCEE_ACCESS_PATH := device/lge/l70pn/prebuilt/etc/nfcee_access.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
-
 PRODUCT_COPY_FILES += \
     device/lge/l70pn/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/lge/l70pn/prebuilt/etc/thermal-engine-8610.conf:system/etc/thermal-engine-8610.conf \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-	frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
     device/lge/l70pn/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/lge/l70pn/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
     device/lge/l70pn/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
@@ -63,9 +59,3 @@ $(call inherit-product, vendor/lge/l70pn/l70pn-vendor.mk)
 # Inherit from msm8610-common
 $(call inherit-product, device/lge/msm8610-common/msm8610.mk)
 
-# Enable ADB during boot for debugging. (Very unsafe. Remove before public build)
-
-ADDITIONAL_DEFAULT_PROPERTIES += \
-	ro.adb.secure=0 \
-	ro.secure=0 \
-	ro.debuggable=1
