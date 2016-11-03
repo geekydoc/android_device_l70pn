@@ -25,13 +25,9 @@ PRODUCT_PACKAGES += Torch
 
 # NFC packages
 PRODUCT_PACKAGES += \
-	NQNfcNci \
-    libnqnfc-nci \
+    NfcNci \
+    libnfc-nci \
     nfc_nci.pn54x.default \
-    libp61-jcop-kit \
-    com.nxp.nfc.nq \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
     Tag \
     com.android.nfc_extras
 
