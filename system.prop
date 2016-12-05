@@ -13,3 +13,6 @@ ro.nfc.port "I2C"
 telephony.lteOnGsmDevice=0
 ro.telephony.default_network=3
 ro.sf.lcd_density=240
+
+#Set the device model
+ro.product.model=LG-D290n
