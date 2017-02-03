@@ -99,7 +99,7 @@
          This is being added to enable a simple scenario of pre-paid
          provisioning on some carriers, working around a bug (7305641)
          where if the preferred is used we don't try the others. -->
-    <bool name="config_dontPreferApn">true</bool>
+    <bool name="config_dontPreferApn">false</bool>
 
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
