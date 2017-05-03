@@ -16,3 +16,5 @@ ro.sf.lcd_density=240
 
 #Set the device model
 ro.product.model=LG-D290n
+#Support TWRP
+ro.product.device=l70pn
